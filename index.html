@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Xiong Jie's resume</title>
+    <meta name="description" content="Resume">
+    <meta name="keywords" content="C,C++,JavaScript">
+    <meta name="author" content="Xiong Jie">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <script defer src="percentage.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        /* body {
+            font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+        }
+
+        @font-face {
+            font-family: 'Myriad Pro';
+            src: url(MyriadPro-Regular.otf);
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="name">Xiong Jie</p>
+        <address>
+            <p id="email">Email: allenxiong@outlook.com</p>
+            <p id="language">
+                <a href="resume_chinese.html">中文</a>
+            </p>
+        </address>
+    </div>
+    <br>
+
+    <div>
+        <h2>Technology Summary</h2>
+        <!-- <ul>
+            <li>Proficient in JavaScript, familiar with modern full stack technologies such as Node.js, Angular and etc.</li>
+            <li>Deep understanding of data structures and algorithms, rich experience in performance tuning</li>
+            <li>Familiar with C/C++, Java and some other modern programming languages</li>
+            <li>Lots of experience working with HTML5 rendering, both using canvas or SVG</li>
+            <li>English: CET6 and BEC higher, fluency in speaking, skilled in reading and communication</li>
+            <li>Japanese: JLPT N1, had consecutive interpretation and translation experiences</li>
+        </ul> -->
+        <div id="canvasContainer"></div>
+    </div>
+
+    <div class="timeTable">
+        <h2>Work Experience</h2>
+        <div class="experienceItem">
+            <p class="time">July 2018 - Present</p>
+            <p class="subTitle current">Oracle R&D Center</p>
+            <p class="subTitle">Senior Software Engineer</p>
+            <ul>
+                <li>Develop Application Performance Management of Oracle Cloud Platform</li>
+                <li>Design the pages and use Oracle JET to implement</li>
+                <li>Deliver code with extremely high quality and stability</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">December 2017 - July 2018</p>
+            <p class="subTitle current">Schneider Electric</p>
+            <p class="subTitle">Senior Embedded Software Designer</p>
+            <ul>
+                <li>Develop the next generation UPS control system</li>
+                <li>Write C++ code, which requires strictest quality and extreme performance at the same time</li>
+                <li>Develop a web based UPS control system</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">July 2013 - December 2017</p>
+            <p class="subTitle current">
+                <a href="#siemensExperiences">Siemens Product Lifecycle Management Software Inc.</a>
+            </p>
+            <p class="subTitle">Software Engineer</p>
+            <ul>
+                <li>Responsible for the architecture and development of Siemens PLM 2D diagram foundation project.</li>
+                <li>Keeping an eye on new techniques like new rendering methods, new JavaScript libraries which may be taken advantage of for the project. Help fixing problems which are language/library related.</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">July 2007 - January 2010</p>
+            <p class="subTitle">
+                <a href="#hyronExperiences">Shanghai Hyron Software (former Omron Computer)</a>
+            </p>
+            <p class="subTitle">Software Engineer</p>
+            <ul>
+                <li>Updated, maintained and reconstructed the EDA system
+                    <a href="http://www.jedat.co.jp/eng/products.html">
+                        <i>Alpha-SX</i>
+                    </a> series</li>
+                <li>Wrote code in C/C++ and built in Visual Studio</li>
+                <li>Supported cross-platform, from Windows through to Sun/Solaris, Redhat Linux to SUSE</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="timeTable">
+        <h2>Project Experience</h2>
+        <div class="experienceItem">
+            <p class="time">July 2018 - Present</p>
+            <p class="subTitle current">Develop <a href="https://cloud.oracle.com/home"><i>Oracle Could Platform</i></a></p>
+            <ul>
+                <li>APM (Application Performance Management) of Oracle Cloud will monitor application performance, user experience and Database Diagnostics, I work most on mobile application monitoring.</li>
+                <li>Design the pages, which data should be displayed and how they displayed, then implement them. Work closely with the back-end teams, decided the REST APIs.</li>
+                <li>Use Oracle JET, which is a modular toolkit like Angular ecosystem.</li>
+                <li>Refactor the existing code to make it faster and better effect in latest browsers.</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">December 2017 - July 2018</p>
+            <p class="subTitle current">Develop the next generation UPS control system</p>
+            <ul>
+                <li>Take part in the design of the architecture.</li>
+                <li>Bring features in short time with very high quality.</li>
+                <li>Do performance tuning of existing system.</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">January 2016 - December 2017</p>
+            <p class="subTitle current">Develop
+                <a href="https://www.plm.automation.siemens.com/en/products/teamcenter/active-workspace/">
+                    <i>Active Workspace</i>
+                </a> which is an interface for
+                <a href="https://www.plm.automation.siemens.com/en/products/teamcenter/index.shtml">
+                    <i>Teamcenter</i>
+                </a>
+            </p>
+            <ul>
+                <li>Used the new developed 2D diagram application to replace yWorks.</li>
+                <li>Responsible for the performance tuning, due to my changes, some operations are 60 times faster than before.</li>
+                <li>Refactor the project from being based on GWT to native JavaScript.</li>
+                <li>Introduced AngularJS to declare dynamic views.</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">July 2013 - January 2016</p>
+            <p class="subTitle current">Develop a 2D diagram web application</p>
+            <ul>
+                <li>Designed and developed a 2D diagram web application which was used by multiple applications as the foundation.</li>
+                <li>Took part in the project from the very beginning, created the application from scratch and did a lot of research in advance to help choose technologies for the project.</li>
+                <li>Focused on graphic/text rendering, which is implemented in two modes: one uses HTML5 canvas, and the other uses SVG. Made sure all features are functional in two modes and behave without distinction.</li>
+                <li>Responsible for the performance tuning, tremendously improved the performance</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">October 2009 - January 2010</p>
+            <p class="subTitle">Develop a new software of the EDA system
+                <a href="http://www.jedat.co.jp/eng/products.html">
+                    <i>Alpha-SX</i>
+                </a> series</p>
+            <ul>
+                <li>Involved in software architecture design</li>
+                <li>Led new employees to participate in the project</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">March 2009 - October 2009</p>
+            <p class="subTitle">Develop a new feature of the schematic editor of the EDA system
+                <a href="http://www.jedat.co.jp/eng/products.html">
+                    <i>Alpha-SX</i>
+                </a> series</p>
+            <ul>
+                <li>Independently completed the whole processes, including documentation, outline design, detailed design, coding and functional testing</li>
+                <li>The completion time was 1/2 of the expected with very low defect rates</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">July 2007 - March 2009</p>
+            <p class="subTitle">Reconstruct the schematic editor the EDA system
+                <a href="http://www.jedat.co.jp/eng/products.html">
+                    <i>Alpha-SX</i>
+                </a> series</p>
+            <ul>
+                <li>Responsible for most part of the coding</li>
+                <li>Faster by 11 times after reconstruction</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="timeTable">
+        <h2>Education Background</h2>
+        <div class="experienceItem">
+            <p class="time">September 2010 - July 2013</p>
+            <p class="subTitle">Hohai University</p>
+            <ul>
+                <li>Electronics and Communication Engineering</li>
+                <li>Master</li>
+            </ul>
+        </div>
+        <div class="experienceItem">
+            <p class="time">September 2003 - July 2007</p>
+            <p class="subTitle">East China University of Science and Technology</p>
+            <ul>
+                <li>Information Engineering</li>
+                <li>Bachelor</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="timeTable">
+        <h2>Personal Information</h2>
+        <ul class="horizontalList">
+            <li>Gender: Male</li>
+            <li>Date of Birth: May 12, 1986</li>
+            <li>Marital Status: Married</li>
+        </ul>
+    </div>
+</body>
+
+
+</html>
